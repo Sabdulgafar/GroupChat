@@ -1,4 +1,6 @@
+
 const mongoose = require("mongoose");
+
 
 const Users = mongoose.Schema({
     email: {type:String},
@@ -15,6 +17,8 @@ const Users = mongoose.Schema({
     resetPasswordToken: String,
     resetPasswordExpires:{type:Date},
 
-})
+    
 
+
+})
 module.exports = mongoose.model('Users', Users);
