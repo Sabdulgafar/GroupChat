@@ -3,15 +3,7 @@ var express = require("express");
 var app1 = express();
 var app2 = express();
 const mongoose = require('mongoose');
-// require('./database/db'); This line requires and runs the 'db.js' file, establishing the MongoDB connection.
-mongoose.connect('mongodb://127.0.0.1:27017/GroupChat', {useNewUrlParser: true})
-// Get the default connection
-const db = mongoose.connection;
-
-// Define connection event handlers
-db.on('connected', () => {
-    console.log(`Connected to MongoDB at GroupChat`);
-});
+require('./database/db'); //This line requires and runs the 'db.js' file, establishing the MongoDB connection.
 
 app1.set('view engine', 'ejs');
 
