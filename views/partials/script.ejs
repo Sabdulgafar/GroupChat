@@ -7,4 +7,17 @@
         document.getElementById("loginform").style.display="block";
         document.getElementById("regform").style.display="none";
     }
+    function sendMessage(){
+        let UserMessage=document.getElementById('UserMessage').value;
+        if (UserMessage != ""){
+            const chatMessageArea = document.getElementById('chat-message-area');
+            const para = document.createElement("p");
+            let msg = document.createTextNode(UserMessage);
+            para.appendChild(msg);
+            chatMessageArea.appendChild(para);
+        }else{
+            alert("You cannot send an empty message...")
+        }
+    }
+    
 </script>

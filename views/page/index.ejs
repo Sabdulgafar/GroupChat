@@ -8,24 +8,24 @@
 <p align="center">Please <a href="" onclick="showLoginForm()">login</a> to get started</p>
 <div class="costome-container" id="loginform">
     <form action="">
-        <input type="text" name="username" id="username" placeholder="Username...">
+        <input type="text" class="field" name="username" id="username" placeholder="Username...">
         <br />
-        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="password" class="field" name="password" id="password" placeholder="Password">
         <br />
         <a href="http://localhost:8080/chatboard" class="login-btn">Login</a> <input type="submit" value="Reset" id="reset" class="custom-btn">
     </form>
 </div>
 <div class="costome-container" id="regform" style="display: none;">
-    <form action="">
-        <input type="text" name="firstname" id="firstname" placeholder="First Name">
+    <form action="/register" method="post">
+        <input type="text" class="field" name="firstname" id="firstname" placeholder="First Name">
         <br />
-        <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+        <input type="text" class="field" name="lastname" id="lastname" placeholder="Last Name">
         <br />
-        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="email" class="field" name="email" id="email" placeholder="Email">
         <br />
-        <input type="text" name="username" id="username" placeholder="Username...">
+        <input type="text" class="field" name="username" id="username" placeholder="Username...">
         <br />
-        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="password" class="field" name="password" id="password" placeholder="Password">
         <br />
         <input type="submit" value="Submit" id="submit" class="custom-btn"> <input type="submit" value="Reset" id="reset" class="custom-btn">
     </form>
